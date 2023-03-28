@@ -1,0 +1,195 @@
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+}
+html,body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.clear {
+    /* use for float left and right */
+    clear: both;
+}
+/* HEADER */
+.header img {
+    width: 250px;
+}
+
+.header li {
+    list-style: none;
+    display: inline;
+    margin: 0 10px;
+}
+
+.header li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    
+}
+
+.header ul {
+    background-color: black;
+    padding: 15px 0;
+    margin: 5px 0;
+}
+
+/* CAROUSEL */
+
+.carousel {
+    background-image: url("../img/slider_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 550px;
+}
+
+/* PRODUCTS */
+.products {
+    margin-bottom: 70px;
+}
+
+.products__item {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.products__item img {
+    width: 100%;
+}
+
+.products__item button {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+.products h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* padding la khoang cach content so voi vien */
+.products__item h3 {
+    font-size: 25px;
+}
+
+/* nhuoc diem cua float: float anh huong cac thanh phan 
+ben duoi cua phan sua float se bi anh huong boi float
+de tranh anh huong boi float --> clear hieu ung cua float
+*/
+
+/* INTRO */
+.intro__right, .intro__left {
+    float: left;
+    width: 50%;
+}
+
+.intro__smallItem {
+    float: left;
+    width: 50%;
+}
+
+.intro__item img {
+    display: block;
+    width: 100%;
+    padding: 0 11px 25px;
+}
+
+.intro__text {
+    font-size: 20px;
+    margin: 25px 0 40px;
+}
+
+.intro__text span {
+    color: red;
+    font-weight: bold;
+}
+/* BANNER */
+.banner {
+    height: 400px;
+    background-image: url("../img/nature.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.banner p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.banner p:first-child {
+    font-size: 30px;
+    margin: 50px 0 0;
+}
+
+.banner p:nth-child(2) {
+    font-size: 80px;
+}
+
+.banner__circle {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(131, 41, 39, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    left: 300px;
+    top: 15px;
+}
+
+/* SERVICES */
+/* ky thuat can giua set width < 100% va margin : auto */
+.services__content {
+    /* set 70% thi con 30% trong chia deu 2 ben  */
+    width: 70%;
+    margin: auto;
+    /* margin-left: 15%;
+    margin-right: 15%; */
+}
+
+.services__item{
+    float: left;
+    width: calc(100%/3);
+    text-align: center;
+    padding: 0 10px;
+}
+
+.services__item i {
+    font-size: 40px;
+}
+
+.services {
+    margin: 30px 0 10px;
+}
+
+.services__item h2 {
+    margin: 10px 0;
+}
+
+.services__item p {
+    margin: 0;
+}
+/* FOOTER */
+.footer {
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 20px 0;
+}
+
+
+
+.footer h2, .footer p{
+    margin: 0;
+}
+
+.footer h2 {
+    font-size: 30px;
+}
